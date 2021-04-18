@@ -35,18 +35,18 @@ header{
   flex-direction: column;
   justify-content: space-around;
 }
-nav{
+header nav{
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 20px 50px;
   color: var(--white-100);
 }
-nav a.logo-header{
+header nav a.logo-header{
   width: 35px;
   margin: 0 30px;
 }
-nav div.nav-links{
+header nav div.nav-links{
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -157,6 +157,8 @@ main{
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  max-width: 1024px;
+  margin: 0 auto;
 }
 main h2{
   font-size: 40px;
@@ -232,3 +234,39 @@ section.project-resume button.ux-ui{
 }
 
 /* FOOTER */
+footer{
+  background-color: var(--brown-900);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  color: var(--white-100);
+  font-size: 14px;
+}
+footer a{
+  color: var(--white-100);
+}
+footer nav,ul{
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;    
+}
+footer nav{
+  width: 100%;
+  margin: 30px;
+}
+footer nav ul li{
+  margin-right: 15px;
+}
+footer ul.sections{
+  font-weight: 700;
+}
+footer p{
+  text-align: center;
+}
+footer p em{
+  color: var(--red-900);
+  font-size: 20px;
+  font-weight: 700;
+}
