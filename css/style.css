@@ -26,7 +26,7 @@ a{
 }
 /* HEADER NAV */
 header{
-  background: linear-gradient(83.1deg, rgba(154, 46, 52, 0) -0.08%, #C87B4D 93.59%),url("../assets/banner.jpg");
+  background: linear-gradient(83.1deg, rgba(154, 46, 52, 0) -0.08%, #C87B4D 100%), url("../assets/banner.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -73,7 +73,7 @@ nav div.nav-links{
   color: var(--white-100);
 }
 
-/* HEADER CONTENT */
+/* HEADER MAIN CONTENT */
 .header-content{
   display: flex;
   flex-direction: column;
@@ -90,8 +90,6 @@ h1{
   color: #F0D3B5;
   margin: 50px 0;
 }
-.header-content img.award{
-}
 .header-content p{
   margin: 30px 0;
   color: var(--white-100);
@@ -101,30 +99,136 @@ h1{
 .header-content p em,.header-content p strong{
   color: var(--brown-700);
 }
- /* HEADER SECTION */
- .header-section{
-   display: flex;
-   justify-content: space-between;
-   align-items: center;
-   padding: 0 30px;
- }
- .header-section a{
-   color: var(--white-100);
-   width: 150px;
-   height: 40px;
-   font-weight: 700;
-   display: inline-block;
-   text-align: center;
-   line-height: 40px;
-   margin-left: 20px;
- }
- .header-section a.main-button{
-   background-color: var(--brown-800);
-   border-radius: 100px;
-   border:none;
- }
- .header-section a.secondary-button{
-   background-color: transparent;
-   border-radius: 100px;
-   border:1px var(--brown-800) solid;
- }
+
+/* HEADER SECTION */
+.header-section{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 30px;
+}
+.header-section a{
+  color: var(--white-100);
+  width: 150px;
+  height: 40px;
+  font-weight: 700;
+  display: inline-block;
+  text-align: center;
+  line-height: 40px;
+  margin-left: 20px;
+}
+.header-section a.main-button{
+  background-color: var(--brown-800);
+  border-radius: 100px;
+  border:none;
+}
+.header-section a.secondary-button{
+  background-color: transparent;
+  border-radius: 100px;
+  border:1px var(--brown-800) solid;
+}
+.header-section .right-section{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-section .right-section img{
+  margin-right: 8px;
+}
+.header-section .right-section a {
+  display: inline-block;
+  line-height: 16px;
+  font-weight: 600;
+  margin: 10px 0;
+  text-align: left;
+  width: 100%;
+  height: fit-content;
+}
+.header-section .right-section a img{
+  height: 16px;
+  margin-left: 15px;
+}
+
+/* MAIN */
+main{
+  padding: 60px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+main h2{
+  font-size: 40px;
+  font-weight: 600;
+  color: var(--brown-900);
+  width: 100%;
+}
+main p.p-main-title{
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--brown-900);
+  margin-top: 8px;
+  margin-bottom: 40px;
+  width: 100%;
+}
+main article.proyect-card{
+  width: 45%;
+  margin: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+article.proyect-card img.project-image{
+  width: 100%;
+  border-radius: 10px 10px 0 0;
+}
+section.project-resume{
+  padding: 15px;
+  width: 100%;
+}
+section.project-resume h3{
+  color: var(--dark-900);
+  font-size: 14px;
+}
+section.project-resume div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 15px 0;
+  flex-wrap: wrap;
+}
+section.project-resume p.place, section.project-resume p.date{
+  color: var(--dark-900);
+  font-size: 14px;
+  font-weight: 400;
+}
+section.project-resume img{
+  margin-right: 15px;
+}
+section.project-resume p.owner{
+  font-size: 14px;
+  font-weight: 400;
+}
+section.project-resume button{
+  width: 55px;
+  height: 25px;
+  border-radius: 16px;
+  border: none;
+  color: var(--white-100);
+  font-size: 12px;
+  font-weight: 700;
+  margin-left: 5px;
+}
+section.project-resume button.dev{
+  background-color: var(--brown-800);
+}
+section.project-resume button.mvp{
+  background-color: var(--dark-900);
+}
+section.project-resume button.ux-ui{
+  background-color: var(--brown-700);
+}
+
+/* FOOTER */
