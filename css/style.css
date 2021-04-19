@@ -61,6 +61,15 @@ header nav div.nav-links{
 .nav-links ul li a{
   color: var(--white-100);
 }
+.nav-links .search{
+  background-image: url("../assets/icons/search-icon.svg");
+  background-position: 10px;
+  background-repeat: no-repeat;
+  text-align: center;
+}
+.nav-links .search:focus-within{
+  background-image: unset;
+}
 .nav-links input{
   width: 124px;
   height: 40px;
@@ -68,6 +77,14 @@ header nav div.nav-links{
   border: 1px white solid;
   background-color: transparent;
   text-align: center;
+  padding-left: 15px;
+  color: var(--white-100);
+}
+.nav-links input:focus{
+  text-align: left;
+}
+.nav-links input:focus::placeholder{
+  color: transparent;
 }
 .nav-links input::placeholder{
   color: var(--white-100);
